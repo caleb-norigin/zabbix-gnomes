@@ -195,7 +195,7 @@ if graph:
     if session.cookies['zbx_sessionid']:
 
        # Build the request for the graph
-       graphurl = api + "/" + generator + "?graphid=" + str(graphid) + "&period=" + str(period) + "&width=" + str(width) + "&height=" + str(height) + "&stime=" + str(stime)
+       graphurl = api + "/" + generator + "?graphid=" + str(graphid) + "&period=" + str(period) + "&width=" + str(width) + "&height=" + str(height) + "&stime=" + str(stime) + "&isNow=0"
 
        # get the graph
        graphreq = session.get(graphurl,verify=verify)
